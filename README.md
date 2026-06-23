@@ -84,12 +84,12 @@ Bundled with **Parcel**; the GLSL transformer imports shader files as strings.
 
 ## 🌐 Deploying
 
-The build is fully static, so it works on any static host:
+Deployment is automated with **GitHub Actions** — every push to `main` builds the project and publishes it to GitHub Pages via [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). To enable it on a fork, set **Settings → Pages → Source** to **GitHub Actions**; the build already uses relative asset paths (`--public-url ./`) so it works on the project subpath.
 
-- **GitHub Pages** — `npm run build`, then publish `dist/` (e.g. `npx gh-pages -d dist`) and enable Pages for that branch. The build already uses relative asset paths (`--public-url ./`).
+The build is fully static, so it also runs on any other host:
+
 - **Netlify / Vercel / Cloudflare Pages** — connect the repo with build command `npm run build` and output directory `dist`.
-
-Update the **Play it live** link above once it's deployed.
+- **Manual** — `npm run build`, then serve the resulting `dist/` folder anywhere.
 
 ---
 
