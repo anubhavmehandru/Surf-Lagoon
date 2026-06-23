@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #9fc4e8;
+    color: #fff;
+}
+
+canvas { display: block; }
+
+/* ---- Start screen ---- */
+#start {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(12, 38, 64, 0.45);
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    z-index: 10;
+}
+
+#start .panel {
+    text-align: center;
+    padding: 2.5rem 3rem;
+    background: rgba(8, 28, 48, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    user-select: none;
+}
+
+#start h1 {
+    margin: 0 0 0.4rem;
+    font-size: clamp(2.4rem, 7vw, 3.6rem);
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 26px rgba(120, 200, 255, 0.7);
+}
+
+#start .tag {
+    margin: 0 0 1.6rem;
+    color: #cfe6ff;
+    font-size: 1.1rem;
+}
+
+#start .controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.6rem;
+    margin: 0 auto 1.6rem;
+    max-width: 420px;
+    color: #b6cee6;
+    font-size: 0.95rem;
+    text-align: left;
+}
+#start .controls b { color: #fff; }
+
+#start .play {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #7fd3ff;
+    animation: pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+
+/* ---- In-game HUD ---- */
+#hud {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    display: none;
+    gap: 10px;
+    z-index: 5;
+}
+#hud span {
+    padding: 8px 14px;
+    background: rgba(8, 28, 48, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-right: 8px;
+}
+
+/* ---- Win / status banner ---- */
+#banner {
+    position: fixed;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    padding: 12px 22px;
+    background: rgba(8, 28, 48, 0.7);
+    border: 1px solid rgba(127, 211, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1.15rem;
+    text-shadow: 0 0 16px rgba(120, 200, 255, 0.6);
+    z-index: 6;
+}

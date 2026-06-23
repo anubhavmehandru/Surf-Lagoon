@@ -1,0 +1,22 @@
+{
+    "name": "surf-lagoon",
+    "version": "1.0.0",
+    "description": "Surf Lagoon — a real-time 3D browser game built on Three.js with custom GLSL ocean/sky shaders and from-scratch movement physics.",
+    "private": true,
+    "scripts": {
+        "dev": "parcel index.html --open",
+        "build": "parcel build index.html --public-url ./",
+        "clean": "rimraf dist .parcel-cache"
+    },
+    "dependencies": {
+        "mv-redux": "^0.1.7",
+        "three": "^0.170.0"
+    },
+    "devDependencies": {
+        "@parcel/transformer-glsl": "^2.16.0",
+        "parcel": "^2.16.0"
+    },
+    "@parcel/resolver-default": {
+        "packageExports": true
+    }
+}

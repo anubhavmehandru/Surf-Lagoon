@@ -1,0 +1,9 @@
+/node_modules
+/.parcel-cache
+/dist
+
+# Editor / OS
+/.vscode
+/.idea
+.DS_Store
+Thumbs.db

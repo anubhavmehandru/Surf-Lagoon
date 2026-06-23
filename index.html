@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surf Lagoon — Three.js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Start screen (scene animates behind it) -->
+    <div id="start">
+        <div class="panel">
+            <h1>🏄 Surf Lagoon</h1>
+            <p class="tag">Carve around the lagoon and collect every gem.</p>
+            <div class="controls">
+                <span><b>W</b> / ↑ — surf forward</span>
+                <span><b>S</b> / ↓ — slow / reverse</span>
+                <span><b>A&nbsp;D</b> / ← → — steer</span>
+                <span><b>Space</b> — hop</span>
+                <span><b>R</b> — restart</span>
+            </div>
+            <p class="play">Click to start</p>
+        </div>
+    </div>
+
+    <!-- In-game HUD -->
+    <div id="hud">
+        <span id="gems">💎 0 / 0</span>
+        <span id="time">⏱ 0.0s</span>
+    </div>
+
+    <!-- Win / status banner -->
+    <div id="banner"></div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
