@@ -2,7 +2,7 @@
 
 A real-time 3D browser game built on **Three.js** and **WebGL** — steer a surfer around a buoy-ringed lagoon, carve through an animated shader-driven ocean, and collect every glowing gem against the clock. **The interesting parts aren't what the framework gives you for free — they're the hand-written GLSL shaders and from-scratch movement physics layered on top.**
 
-🔗 **Play it live:** [**anubhavmehandru.github.io/surf-lagoon**]([https://anubhavmehandru.github.io/surf-lagoon/](https://anubhavmehandru.github.io/Surf-Lagoon/))
+🔗 **Play it live:** [anubhavmehandru.github.io/Surf-Lagoon](https://anubhavmehandru.github.io/Surf-Lagoon/)
 
 ![Built with Three.js · WebGL · GLSL](https://img.shields.io/badge/built%20with-Three.js%20%C2%B7%20WebGL%20%C2%B7%20GLSL-049ef4) ![Playable](https://img.shields.io/badge/status-playable-success) ![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
